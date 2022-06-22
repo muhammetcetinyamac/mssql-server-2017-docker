@@ -1,0 +1,12 @@
+version: "3.2"
+services:
+
+  sql-server-db:
+    container_name: sql-server-db
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "1a2b3c4d5TT"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Developer"
